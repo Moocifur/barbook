@@ -84,7 +84,7 @@ form {
   cursor: pointer;
 }
 
-#search {
+#search-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,5 +160,26 @@ form {
   font-size: 0.95rem; /* Slightly smaller font size for ingredients */
   color: var(--text-color); /* Keep text color consistent */
   padding: 5px 0; /* Add some spacing inside each list item */
+}
+
+/*-------------------------------------------*/
+
+@media(max-width: 500px) {
+  html {
+    font-size: 12pt;
+  }
+
+  #search-button {
+    position: unset;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    height: auto;
+  }
+
+  h1 {
+    margin-top: 50px;
+    /* font-size: 15vw; */
+  }
 }
 
