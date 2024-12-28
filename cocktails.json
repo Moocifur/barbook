@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Old Fashion",
+        "glass": "Rocks Glass",
+        "method": "Stir",
+        "garnish": "Orange Twist",
+        "ingredients": [
+            { "amount": "1", "name": "Sugar Cube", "type": "Sweetner"},
+            { "amount": "2 Dashes", "name": "Angostura", "type": "Bitters"},
+            { "amount": "2oz", "name": "Whiskey", "type": "Spirit"}   
+        ],
+        "categories": ["classic", "spirit-forward"]
+    },
+    {
+        "id": 2,
+        "name": "Manhattan",
+        "glass": "Martini Glass",
+        "method": "Stir",
+        "garnish": "Maraschino Cherry",
+        "ingredients": [
+            { "amount": "2 Dashes", "name": "Angostura", "type": "Bitters"},
+            { "amount": "2oz", "name": "Whiskey", "type": "Spirit"},
+            { "amount": "1oz", "name": "Sweet Vermouth", "type": "Modifier"}
+        ],
+        "categories": ["classic", "spirit-forward"]
+    },
+    {
+        "id": 3,
+        "name": "Martini",
+        "glass": "Martini Glass",
+        "method": "Stir",
+        "garnish": "Lemon Twist OR Olive",
+        "ingredients": [
+            { "amount": "2.5oz", "name": "Vodka", "type": "Spirit"},
+            { "amount": "0.5oz", "name": "Dry Vermouth", "type": "Modifier"}
+        ],
+    },
+    {
+        "id": 4,
+        "name": "Daiquiri",
+        "glass": "Coupe",
+        "method": "Shake",
+        "garnish": "Lime Wheel",
+        "ingredients": [
+            { "amount": "2oz", "name": "Rum", "type": "Spirit"},
+            { "amount": "0.75oz", "name": "Lime", "type": "Citrus"},
+            { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetner"}
+        ]
+    }
+]
