@@ -1,4 +1,5 @@
-[
+//cocktails.js
+export const cocktails = [
     {
         "id": 1,
         "name": "Old Fashion",
