@@ -51,7 +51,7 @@ h1 {
 }
 
 /*input bar*/
-#search-input {
+#search-bar {
   box-sizing: border-box;
   padding: 12px 20px;
   width: 100%;
@@ -63,7 +63,7 @@ h1 {
   caret-color: var(--accent-color);
 }
 
-#search-input:focus {
+#search-bar:focus {
   outline: none;
 }
 
@@ -85,7 +85,7 @@ form {
 }
 
 /* Add flexbox alignment for uniformity */
-#search-container {
+#main {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
   justify-content: center; /* Center cards */
@@ -96,7 +96,7 @@ form {
 
 /*---------------------------------------------*/
 
-.drink-card {
+.card {
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 20px; 
@@ -112,26 +112,26 @@ form {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.drink-card:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Card header (title and optional image) */
-.drink-name {
+.card-header {
   display: flex; 
   align-items: center;
   gap: 10px;
 }
 
-.drink-name img {
+.card-header img {
   width: 40px;
   height: 40px;
   object-fit: contain;
   border-radius: 50%;
 }
 
-.drink-name h2 {
+.card-header h2 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -170,10 +170,10 @@ form {
 }
 
 .no-results {
-  color: var(--accent-color);
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 20px;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
 

@@ -2,15 +2,17 @@
 import "./styles.css";
 import { cocktails } from "./cocktails.js";
 
+import rocksGlass from "./assets/rocks-glass.jpg";
+
 //SELECTORS
-const mainContainer = document.getElementById('search-container');
-const searchInput = document.getElementById('search-input');
+const mainContainer = document.getElementById('main');
+const userInput = document.getElementById('search-bar');
 const searchButton = document.getElementById('search-button');
 
 //EVENTLISTENER
 searchButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const query = searchInput.value.toLowerCase().trim();
+    const query = userInput.value.toLowerCase().trim();
 
     // Filter cocktails by name or ingredients
     const filterCocktails = cocktails.filter(cocktail => 
@@ -20,41 +22,90 @@ searchButton.addEventListener("click", (event) => {
 
     // Re-render Results
     mainContainer.innerHTML = "";
+
+    // Check if results exist
     if (filterCocktails.length > 0) {
         filterCocktails.forEach(cocktail => {
-            mainContainer.innerHTML += renderCocktailCard(cocktail);
+            const card = renderCard(cocktail); // Create a card element
+            mainContainer.appendChild(card); // Append it to the container
         });
     } else {
-        mainContainer.innerHTML = `<p class="no-results">No results for "${query}".</p>`;
+        // Create and display a "no results" message
+        const noResultsMessage = document.createElement("p");
+        noResultsMessage.classList.add("no-results");
+        noResultsMessage.textContent = `No results for "${query}".`;
+        mainContainer.appendChild(noResultsMessage);
     }
 });
 
 //FUNCTIONS
-function renderCocktailCard(cocktail) {
-    return `
-      <div class="drink-card">
-        <div class="drink-name">
-          <h2>${cocktail.name}</h2>
-        </div>
-        <div class="preparations">
-          <p>${cocktail.glass} / ${cocktail.method} / ${cocktail.garnish}</p>
-        </div>
-        <ul class="ingredients">
-          ${cocktail.ingredients
-            .map((ingredient) => `<li>${ingredient.amount} ${ingredient.name}</li>`)
-            .join("")}
-        </ul>
-      </div>
-    `;
-  }
+function renderCard(cocktail) {
+    // Create the main card container
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    // Create the card header
+    const cardHeader = document.createElement("div");
+    cardHeader.classList.add("card-header");
+
+    const icon = document.createElement("img");
+    icon.src = rocksGlass;
+    icon.alt = "Cocktail Icon";
+    icon.classList.add("cocktail-icon");
+
+    const cocktailName = document.createElement("h2");
+    cocktailName.textContent = cocktail.name;
+
+    cardHeader.appendChild(icon);
+    cardHeader.appendChild(cocktailName);
+
+    // Create the preparations section
+    const preparationDiv = document.createElement("div");
+    preparationDiv.classList.add("preparations");
+    preparationDiv.textContent = `${cocktail.glass} / ${cocktail.method} / ${cocktail.garnish}`;
+
+    // Create the ingredients list
+    const ingredientsList = document.createElement("ul");
+    ingredientsList.classList.add("ingredients");
+    cocktail.ingredients.forEach(ingredient => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${ingredient.amount} ${ingredient.name}`;
+        ingredientsList.appendChild(listItem);
+    });
+
+    // Append all sections to the card
+    card.appendChild(cardHeader);
+    card.appendChild(preparationDiv);
+    card.appendChild(ingredientsList);
+
+    return card;
+
+    // return `
+    //   <div class="card">
+    //     <div class="card-header">
+    //          <img src="assets/rocks-glass.jpg" alt="Cocktail Icon" class="cocktail-icon">
+    //       <h2>${cocktail.name}</h2>
+    //     </div>
+    //     <div class="preparations">
+    //       <p>${cocktail.glass} / ${cocktail.method} / ${cocktail.garnish}</p>
+    //     </div>
+    //     <ul class="ingredients">
+    //       ${cocktail.ingredients
+    //         .map((ingredient) => `<li>${ingredient.amount} ${ingredient.name}</li>`)
+    //         .join("")}
+    //     </ul>
+    //   </div>
+    // `;
+};
   
-  function renderAllCocktails() {
+function renderAllCocktails() {
     mainContainer.innerHTML = ""; // Clear the container
     cocktails.forEach((cocktail) => {
-      mainContainer.innerHTML += renderCocktailCard(cocktail);
+        const card = renderCard(cocktail); // Create a card element
+        mainContainer.appendChild(card); // Append it to the container
     });
-  }
+};
   
-  // Call this function on page load
-  renderAllCocktails();
+// Call this function on page load
+renderAllCocktails();
   
