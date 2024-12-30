@@ -1,8 +1,9 @@
 // index.js
 import "./styles.css";
 import { cocktails } from "./cocktails.js";
+import { glassIcons } from "./icons.js";
 
-import rocksGlass from "./assets/rocks-glass.jpg";
+
 
 //SELECTORS
 const mainContainer = document.getElementById('main');
@@ -48,10 +49,13 @@ function renderCard(cocktail) {
     const cardHeader = document.createElement("div");
     cardHeader.classList.add("card-header");
 
+    // Create and append the icon image
     const icon = document.createElement("img");
-    icon.src = rocksGlass;
-    icon.alt = "Cocktail Icon";
     icon.classList.add("cocktail-icon");
+    icon.src = glassIcons[cocktail.iconType] || glassIcons.default;
+    
+    icon.alt = `${cocktail.iconType} Icon`;
+    // cardHeader.appendChild(icon);
 
     const cocktailName = document.createElement("h2");
     cocktailName.textContent = cocktail.name;
@@ -100,6 +104,7 @@ function renderCard(cocktail) {
   
 function renderAllCocktails() {
     mainContainer.innerHTML = ""; // Clear the container
+
     cocktails.forEach((cocktail) => {
         const card = renderCard(cocktail); // Create a card element
         mainContainer.appendChild(card); // Append it to the container

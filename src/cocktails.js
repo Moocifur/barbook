@@ -4,6 +4,7 @@ export const cocktails = [
         "id": 1,
         "name": "Old Fashion",
         "glass": "Rocks",
+        "iconType": "rocks",
         "method": "Stir",
         "garnish": "Orange Twist",
         "ingredients": [
@@ -17,6 +18,7 @@ export const cocktails = [
         "id": 2,
         "name": "Manhattan",
         "glass": "Martini",
+        "iconType": "martini",
         "method": "Stir",
         "garnish": "Maraschino Cherry",
         "ingredients": [
@@ -30,6 +32,7 @@ export const cocktails = [
         "id": 3,
         "name": "Martini",
         "glass": "Martini",
+        "iconType": "martini",
         "method": "Stir",
         "garnish": "Lemon Twist or Olive",
         "ingredients": [
@@ -42,6 +45,7 @@ export const cocktails = [
         "id": 4,
         "name": "Daiquiri",
         "glass": "Coupe",
+        "iconType": "coupe",
         "method": "Shake",
         "garnish": "Lime Wheel",
         "ingredients": [
@@ -55,6 +59,7 @@ export const cocktails = [
         "id": 5,
         "name": "Margarita",
         "glass": "Rocks",
+        "iconType": "rocks",
         "method": "Shake",
         "garnish": "Salt and Lime",
         "ingredients": [
@@ -69,6 +74,7 @@ export const cocktails = [
         "id": 6,
         "name": "Negroni",
         "glass": "Rocks or Coupe",
+        "iconType": "rocks",
         "method": "Stir",
         "garnish": "Orange Twist",
         "ingredients": [
@@ -82,6 +88,7 @@ export const cocktails = [
         "id": 7,
         "name": "Whiskey Sour",
         "glass": "Coupe",
+        "iconType": "coupe",
         "method": "Shake",
         "garnish": "Angostura",
         "ingredients": [
@@ -96,6 +103,7 @@ export const cocktails = [
         "id": 8,
         "name": "Mojito",
         "glass": "Collins",
+        "iconType": "collins",
         "method": "Shake",
         "garnish": "Mint and Lime Wheel",
         "ingredients": [
@@ -111,6 +119,7 @@ export const cocktails = [
         "id": 9,
         "name": "Tom Collins",
         "glass": "Collins",
+        "iconType": "collins",
         "method": "Shake",
         "garnish": "Lemon Wheel and Cherry",
         "ingredients": [
@@ -125,6 +134,7 @@ export const cocktails = [
         "id": 10,
         "name": "French 75",
         "glass": "Flute",
+        "iconType": "flute",
         "method": "Shake",
         "garnish": "Lemon Twist",
         "ingredients": [
