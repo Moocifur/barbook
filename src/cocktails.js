@@ -590,7 +590,8 @@ export const cocktails = [
             { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
             { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
             { "amount": "Top", "name": "Soda Water", "type": "Modifier" }
-        ]
+        ],
+        "categories": ["modern", "refreshing", "herbal", "citrus-forward", "light"]
     }
     
     
