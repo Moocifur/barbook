@@ -51,27 +51,52 @@ h1 {
 }
 
 /*input bar*/
-#search-bar {
+/* #search-bar {
   box-sizing: border-box;
   padding: 12px 20px;
   width: 100%;
   background: none;
   border: 2px solid var(--secondary-color);
-  border-radius: 1000px; /*rounds edges*/
+  border-radius: 1000px;
   font: inherit;
   color: var(--text-color);
   caret-color: var(--accent-color);
+} */
+
+/* new  */
+#search-bar {
+  flex-grow: 1; /* Takes up available space */
+  border: none;
+  outline: none;
+  padding: 12px 5px;
+  font: inherit;
+  color: var(--text-color);
+  background: none;
+}
+
+#search-bar::-webkit-search-cancel-button {
+  display: none; /* Hides the cancel button in WebKit browsers */
 }
 
 #search-bar:focus {
   outline: none;
 }
 
-form {
-  position: relative;
+/* new  */
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  border: 2px solid var(--secondary-color); /* Matches the | separator color */
+  border-radius: 1000px;
+  padding: 0 10px;
+  gap: 10px; /* Space between elements */
+  box-sizing: border-box;
+  background-color: none;
 }
 
-#search-button {
+/* #search-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -82,7 +107,60 @@ form {
   border: none;
   border-radius: 1000px;
   cursor: pointer;
+} */
+
+#search-button {
+  background-color: var(--accent-color); /* Green search button */
+  border: none;
+  border-radius: 50%; /* Make it round */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px; /* Ensure size consistency */
+  width: 36px; /* Ensure size consistency */
 }
+
+/* #clear-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 70px;
+  height: 100%;
+  padding: 0 15px;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+} */
+
+#clear-button {
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 36px;
+  width: 36px;
+}
+
+.separator {
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--secondary-color); /* Matches border color */
+  margin: 0 5px; /* Adjusts spacing around the separator */
+  display: none; /* Initially hidden */
+}
+
+/* Ensuring all icons are consistent in size */
+#clear-button svg,
+#search-button svg {
+    height: 20px;
+    width: 20px;
+}
+
 
 /* Add flexbox alignment for uniformity */
 #main {
@@ -184,7 +262,22 @@ form {
     text-align: center;
     margin-top: 20px;
 }
+/*----------------------------------------------------------------*/
 
+
+/* Sticky Wrapper */
+.sticky-wrapper {
+  position: sticky;
+  top: 0; /* Stick to the top when scrolled */
+  z-index: 5;
+  background: var(--background);
+  padding: 10px 0;
+}
+
+/* Add transition for scrolled effect */
+.scrolled {
+  transform: translateY(-10px);
+}
 
 /*-------------------------------------------*/
 
@@ -193,16 +286,19 @@ form {
     font-size: 12pt;
   }
 
-  #search-button {
+  /* #search-button {
     position: unset;
     width: 100%;
     margin-top: 10px;
     padding: 15px;
     height: auto;
-  }
+  } */
 
   h1 {
     margin-top: 50px;
   }
 }
+
+/*--------------------------------------*/
+
 

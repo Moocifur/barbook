@@ -10,6 +10,12 @@ const mainContainer = document.getElementById('main');
 const userInput = document.getElementById('search-bar');
 const searchButton = document.getElementById('search-button');
 
+//new
+const searchBar = document.getElementById("search-bar");
+const clearButton = document.getElementById("clear-button");
+const separator = document.querySelector(".separator");
+
+
 //EVENTLISTENER
 searchButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -39,6 +45,27 @@ searchButton.addEventListener("click", (event) => {
         mainContainer.appendChild(noResultsMessage);
     }
 });
+
+// Event listener for input changes
+searchBar.addEventListener("input", () => {
+    if (searchBar.value.trim() !== "") {
+      // Show the clear button and separator when there is text
+      clearButton.style.display = "flex";
+      separator.style.display = "block";
+    } else {
+      // Hide the clear button and separator when there is no text
+      clearButton.style.display = "none";
+      separator.style.display = "none";
+    }
+  });
+  
+  // Clear the search bar when clicking the clear button
+  clearButton.addEventListener("click", () => {
+    searchBar.value = "";
+    clearButton.style.display = "none";
+    separator.style.display = "none";
+    searchBar.focus(); // Optional: Return focus to the search bar
+  });
 
 //FUNCTIONS
 function renderCard(cocktail) {

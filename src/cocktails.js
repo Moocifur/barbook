@@ -940,8 +940,138 @@ export const cocktails = [
             { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
             { "amount": "0.5oz", "name": "Grapefruit Juice", "type": "Citrus" }
         ],
-        "categories": ["modern", "citrus-forward", "refreshing", "balanced", "smoky"]
+        "categories": ["modern", "citrus-forward", "refreshing", "balanced", "smoky", "the famous"]
+    },
+    {
+        "id": 64,
+        "name": "Old Pal",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Stir",
+        "garnish": "Orange Twist",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Rye Whiskey", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Dry Vermouth", "type": "Fortified Wine" },
+            { "amount": "0.75oz", "name": "Campari", "type": "Liqueur" }
+        ],
+        "categories": ["classic", "spirit-forward", "bitter", "balanced", "aromatic"]
+    },
+    {
+        "id": 65,
+        "name": "Olvera",
+        "glass": "Martini",
+        "iconType": "martini",
+        "method": "Shake",
+        "garnish": "Pear Slice",
+        "ingredients": [
+            { "amount": "2oz", "name": "Pear Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "Splash", "name": "Cranberry Juice", "type": "Juice" }
+        ],
+        "categories": ["modern", "fruity", "citrus-forward", "refreshing", "basin 141"]
+    },
+    {
+        "id": 66,
+        "name": "Penicillin",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Candied Ginger",
+        "ingredients": [
+            { "amount": "2oz", "name": "Blended Scotch Whisky", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Ginger Syrup", "type": "Sweetener" },
+            { "amount": "0.25oz", "name": "Honey Syrup", "type": "Sweetener" },
+            { "amount": "2 Sprays", "name": "Laphroaig Scotch Whiskey", "type": "Spirit" },
+        ],
+        "categories": ["modern", "smoky", "citrus-forward", "balanced", "aromatic"]
+    },
+    {
+        "id": 67,
+        "name": "Penicillin (Basin 141)",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "Muddled 1", "name": "Lemon Wedge", "type": "" },
+            { "amount": "Muddled 3", "name": "Sliced Ginger", "type": "" },
+            { "amount": "2oz", "name": "Blended Scotch Whisky", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Honey Syrup", "type": "Sweetener" },
+            { "amount": "3 Sprays", "name": "Laphroaig Scotch Whiskey", "type": "Spirit" },
+        ],
+        "categories": ["modern", "smoky", "citrus-forward", "balanced", "aromatic", "basin 141"]
+    },
+    {
+        "id": 68,
+        "name": "Paper Plane",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "0.75oz", "name": "Bourbon", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Aperol", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Amaro Nonino", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" }
+        ],
+        "categories": ["modern", "balanced", "citrus-forward", "refreshing", "bitter"]
+    },
+    {
+        "id": 69,
+        "name": "Paloma",
+        "glass": "Highball",
+        "iconType": "collins",
+        "method": "Build",
+        "garnish": "Salt Rim and Lime Wedge",
+        "ingredients": [
+            { "amount": "2oz", "name": "Tequila", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "Top", "name": "Grapefruit Soda", "type": "Mixer" }
+        ],
+        "categories": ["classic", "refreshing", "citrus-forward", "light", "tropical"]
+    },
+    {
+        "id": 70,
+        "name": "Pimm's Cup",
+        "glass": "Highball",
+        "iconType": "highball",
+        "method": "Build",
+        "garnish": "Mint, Cucumber, Seasonal Fruits",
+        "ingredients": [
+            { "amount": "2oz", "name": "Pimm's No. 1", "type": "Liqueur" },
+            { "amount": "4oz", "name": "Lemonade or Ginger Ale", "type": "Mixer" },
+            { "amount": "Top", "name": "Soda Water (Optional)", "type": "Mixer" }
+        ],
+        "categories": ["classic", "refreshing", "herbal", "light", "fruity"]
+    },
+    {
+        "id": 71,
+        "name": "Papa Doble",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lime Wheel & Cherry",
+        "ingredients": [
+            { "amount": "1.75oz", "name": "Dark Rum", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Luxardo", "type": "Liqueur" },
+            { "amount": "1oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Grapefruit Juice", "type": "Citrus" },
+            { "amount": "0.25oz", "name": "Simple Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["classic-inspired", "citrus-forward", "balanced", "refreshing", "aromatic", "basin 141"]
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
