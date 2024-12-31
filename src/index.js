@@ -54,14 +54,11 @@ function renderCard(cocktail) {
     const icon = document.createElement("img");
     icon.classList.add("cocktail-icon");
     icon.src = glassIcons[cocktail.iconType] || glassIcons.default;
-    
     icon.alt = `${cocktail.iconType} Icon`;
-    // cardHeader.appendChild(icon);
+    cardHeader.appendChild(icon);
 
     const cocktailName = document.createElement("h2");
     cocktailName.textContent = cocktail.name;
-
-    cardHeader.appendChild(icon);
     cardHeader.appendChild(cocktailName);
 
     // Create the preparations section
@@ -72,10 +69,24 @@ function renderCard(cocktail) {
     // Create the ingredients list
     const ingredientsList = document.createElement("ul");
     ingredientsList.classList.add("ingredients");
+
     cocktail.ingredients.forEach(ingredient => {
         const listItem = document.createElement("li");
-        listItem.textContent = `${ingredient.amount} ${ingredient.name}`;
+
+        const amountSpan = document.createElement("span");
+        amountSpan.classList.add("ingredient-amount");
+        amountSpan.textContent = ingredient.amount;
+
+        const nameSpan = document.createElement("span");
+        nameSpan.classList.add("ingredient-name");
+        nameSpan.textContent = ingredient.name;
+
+        listItem.appendChild(amountSpan);
+        listItem.appendChild(nameSpan);
         ingredientsList.appendChild(listItem);
+
+        // listItem.textContent = `${ingredient.amount} ${ingredient.name}`;
+        // ingredientsList.appendChild(listItem);
     });
 
     // Append all sections to the card
