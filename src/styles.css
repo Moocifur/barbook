@@ -133,23 +133,26 @@ form {
 
 .card-header h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem); /* Dynamically adjusts font size */
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1px;
 
-  white-space: nowrap; /* Prevent long names from wrapping */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Add ellipsis for long names */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden;    /* Hides overflowing text */
+  text-overflow: ellipsis; /* Adds ellipsis for overflow */
 }
 
 /* Card details */
 .preparations {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem); /* Dynamically adjusts font size */;
   color: var(--text-color);
   opacity: 0.8; /* Slightly muted text for secondary info */
   font-style: italic;
+  text-overflow: ellipsis; /* Ensures overflow gets truncated */
+  overflow: hidden; /* Hides text that goes beyond container */
+  white-space: nowrap; /* Keeps text on one line */
 }
 
 /* Ingredients list */
@@ -162,10 +165,9 @@ form {
 }
 
 .ingredients li {
-  font-size: 0.95rem; /* Slightly smaller font size for ingredients */
+  font-size:  clamp(0.8rem, 2vw, .95rem); /* Slightly smaller font size for ingredients */
   color: var(--text-color); /* Keep text color consistent */
   padding: 2px 0; /* Add some spacing inside each list item */
-
   line-height: 1.4; /* Improve readability */
 }
 

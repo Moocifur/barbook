@@ -107,7 +107,7 @@ export const cocktails = [
         "method": "Shake",
         "garnish": "Mint and Lime Wheel",
         "ingredients": [
-            { "amount": "Handful", "name": "Mint", "type": "Fruits and Vegetables" },
+            { "amount": "Muddled Handful", "name": "Mint", "type": "Fruits and Vegetables" },
             { "amount": "2oz", "name": "Rum", "type": "Spirit" },
             { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
             { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" },
@@ -227,7 +227,7 @@ export const cocktails = [
         "glass": "Collins",
         "iconType": "collins",
         "method": "Build",
-        "garnish": "Celery Stick, Lemon Wedge, and Olive",
+        "garnish": "Celery, Lemon Wedge, Olive",
         "ingredients": [
             { "amount": "1.5oz", "name": "Vodka", "type": "Spirit" },
             { "amount": "3oz", "name": "Tomato Juice", "type": "Juice" },
@@ -247,7 +247,7 @@ export const cocktails = [
         "method": "Build",
         "garnish": "Mint Sprig",
         "ingredients": [
-            { "amount": "6-8 Leaves", "name": "Fresh Mint", "type": "Herb" },
+            { "amount": "Mudddled 6-8", "name": "Mint Leaves", "type": "Herb" },
             { "amount": "2.5oz", "name": "Bourbon", "type": "Spirit" },
             { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
         ],
@@ -321,8 +321,8 @@ export const cocktails = [
         "method": "Shake",
         "garnish": "Mint",
         "ingredients": [
-            { "amount": "4 Cubes", "name": "Pear", "type": "Fruit" },
-            { "amount": "6 Leaves", "name": "Mint", "type": "Herb" },
+            { "amount": "Muddled 4 Cubes", "name": "Pear", "type": "Fruit" },
+            { "amount": "Muddled 6", "name": "Mint Leaves", "type": "Herb" },
             { "amount": "2 Spoons", "name": "Brown Sugar", "type": "Sweetener" },
             { "amount": "1.5oz", "name": "Rye Whiskey", "type": "Spirit" },
             { "amount": "1oz", "name": "Brandy", "type": "Spirit" },
@@ -474,7 +474,7 @@ export const cocktails = [
         "method": "Shake n Dump",
         "garnish": "",
         "ingredients": [
-            { "amount": "1/2", "name": "Lime (Cut into Wedges)", "type": "Citrus" },
+            { "amount": "Muddled 1/2", "name": "Lime (Cut into Wedges)", "type": "Citrus" },
             { "amount": "2oz", "name": "Cachaca", "type": "Spirit" },
             { "amount": "2 Spoons", "name": "Sugar", "type": "Sweetener" }
             
@@ -550,8 +550,8 @@ export const cocktails = [
         "method": "Shake",
         "garnish": "Cucumber and Mint Sprig",
         "ingredients": [
-            { "amount": "3 Slices", "name": "Cucumber", "type": "Vegetable" },
-            { "amount": "6 Leaves", "name": "Mint", "type": "Herb" },
+            { "amount": "Muddled 3", "name": "Cucumber Slices", "type": "Vegetable" },
+            { "amount": "Muddled 6", "name": "Mint Leaves", "type": "Herb" },
             { "amount": "2oz", "name": "Gin", "type": "Spirit" },
             { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
             { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" },
@@ -567,8 +567,8 @@ export const cocktails = [
         "method": "Shake",
         "garnish": "Cucumber and Mint Sprig",
         "ingredients": [
-            { "amount": "3 Slices", "name": "Cucumber", "type": "Vegetable" },
-            { "amount": "6 Leaves", "name": "Mint", "type": "Herb" },
+            { "amount": "Muddled 3", "name": "Cucumber Slices", "type": "Vegetable" },
+            { "amount": "Muddled 6", "name": "Mint Leaves", "type": "Herb" },
             { "amount": "2oz", "name": "Gin", "type": "Spirit" },
             { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
             { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" }
@@ -584,20 +584,242 @@ export const cocktails = [
         "method": "Shake",
         "garnish": "Cucumber Slice",
         "ingredients": [
-            { "amount": "2 Slices", "name": "Cucumber", "type": "Vegetable" },
-            { "amount": "6 Leaves", "name": "Mint", "type": "Herb" },
+            { "amount": "Muddled 2", "name": "Cucumber Slices", "type": "Vegetable" },
+            { "amount": "Muddled 6", "name": "Mint Leaves", "type": "Herb" },
             { "amount": "1.5oz", "name": "Gin", "type": "Spirit" },
             { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
             { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
             { "amount": "Top", "name": "Soda Water", "type": "Modifier" }
         ],
         "categories": ["modern", "refreshing", "herbal", "citrus-forward", "light"]
-    }
-    
-    
-    
-    
-    
+    },
+    {
+        "id": 41,
+        "name": "The Famous",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Stir",
+        "garnish": "Orange Twist and Cherry",
+        "ingredients": [
+            { "amount": "2 Dash", "name": "Peychud's Bitters", "type": "Bitters" },
+            { "amount": "2 Dash", "name": "Orange Bitters", "type": "Bitters" },
+            { "amount": "1.5oz", "name": "Bourbon", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Averna", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Luxardo", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Dry Vermouth", "type": "Fortified Wine" }
+        ],
+        "categories": ["modern", "spirit-forward", "aromatic", "balanced", "complex"]
+    },
+    {
+        "id": 42,
+        "name": "Grey Goose & Vodka",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Grapefruit Twist",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Grapefruit Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Agave", "type": "Sweetener" }
+
+        ],
+        "categories": ["modern", "citrus-forward", "refreshing"]
+    },
+    {
+        "id": 43,
+        "name": "Gimlet",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lime Wheel",
+        "ingredients": [
+            { "amount": "2oz", "name": "Vodka or Gin", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["classic", "citrus-forward", "refreshing", "light"]
+    },
+    {
+        "id": 44,
+        "name": "Green Cross Swizzle",
+        "glass": "Collins",
+        "iconType": "collins",
+        "method": "Swizzled",
+        "garnish": "Mint Spring",
+        "ingredients": [
+            { "amount": "1oz", "name": "Dark Rum", "type": "Spirit" },
+            { "amount": "1oz", "name": "Green Chartreuse", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Falernum", "type": "Sweetener" },
+            { "amount": "1oz", "name": "Pineapple Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "2 Dash", "name": "Angostura", "type": "Bitters" }
+        ],
+        "categories": ["modern", "herbal", "tropical", "refreshing", "citrus-forward"]
+    },
+    {
+        "id": 45,
+        "name": "Green Tea Shot",
+        "glass": "Shot",
+        "iconType": "shot",
+        "method": "Shake",
+        "garnish": "",
+        "ingredients": [
+            { "amount": "0.5oz", "name": "Jameson Whiskey", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Peach Schnapps", "type": "Liqueur" },
+            { "amount": "0.25oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.25oz", "name": "Simple Syrup ", "type": "Sweetener" },
+            { "amount": "Splash", "name": "Sprite / 7-Up", "type": "Mixer" }
+        ],
+        "categories": ["modern", "sweet", "refreshing", "party"]
+    },
+    {
+        "id": 46,
+        "name": "Hemingway Daiquiri",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lime Wheel",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "White Rum", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Maraschino Liqueur", "type": "Liqueur" },
+            { "amount": "1oz", "name": "Grapefruit Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+        ],
+        "categories": ["classic", "refreshing", "citrus-forward", "balanced"]
+    },
+    {
+        "id": 47,
+        "name": "Infante",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Grated Nutmeg",
+        "ingredients": [
+            { "amount": "2oz", "name": "Blanco Tequila", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Orgeat Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "refreshing", "citrus-forward", "nutty", "light"]
+    },
+    {
+        "id": 48,
+        "name": "Jalisco Hussy",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Mint Spring",
+        "ingredients": [
+            { "amount": "2oz", "name": "Blanco Tequila", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Serrano Syrup Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "spicy", "citrus-forward", "refreshing", "the famous"]
+    },
+    {
+        "id": 49,
+        "name": "Kamikaze",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lime Wheel",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "1oz", "name": "Triple Sec", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" }
+        ],
+        "categories": ["classic", "citrus-forward", "refreshing", "light"]
+    },
+    {
+        "id": 50,
+        "name": "Live Young Die Fast",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Basil Leaf",
+        "ingredients": [
+            { "amount": "Muddled 3", "name": "Basil Leaves", "type": "Herb" },
+            { "amount": "1.5oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Black Pepper Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "herbal", "spicy", "refreshing", "citrus-forward"]
+    },
+    {
+        "id": 51,
+        "name": "Last Word",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Cherry",
+        "ingredients": [
+            { "amount": "0.75oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Green Chartreuse", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Maraschino Liqueur", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" }
+        ],
+        "categories": ["classic", "herbal", "citrus-forward", "balanced"]
+    },
+    {
+        "id": 52,
+        "name": "Lemon Drop",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Sugar Rim and Lemon Twist",
+        "ingredients": [
+            { "amount": "2oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "1oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "0.5oz", "name": "Triple Sec", "type": "Liqueur" }
+        ],
+        "categories": ["modern", "citrus-forward", "refreshing", "sweet"]
+    },
+    {
+        "id": 53,
+        "name": "Lion's Tail",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lime Wheel",
+        "ingredients": [
+            { "amount": "2oz", "name": "Bourbon", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Allspice Dram", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "2 Dashes", "name": "Angostura Bitters", "type": "Bitters" }
+        ],
+        "categories": ["classic", "spicy", "citrus-forward", "balanced", "aromatic"]
+    },
+    {
+        "id": 54,
+        "name": "Looking Glass",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Grated Nutmeg",
+        "ingredients": [
+            { "amount": "2oz", "name": "Brandy", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Hazelnut Liquer", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Creme de Cacao", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Half n Half", "type": "Dairy" },
+        ],
+        "categories": ["modern", "dessert", "nutty", "creamy", "aromatic"]
+    },
+    {
+        "id": 55,
+        "name": "Little Italy",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Stir",
+        "garnish": "Maraschino Cherry",
+        "ingredients": [
+            { "amount": "2oz", "name": "Rye Whiskey", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Sweet Vermouth", "type": "Fortified Wine" },
+            { "amount": "0.5oz", "name": "Cynar", "type": "Liqueur" }
+        ],
+        "categories": ["modern", "spirit-forward", "bitter", "balanced", "aromatic"]
+    },
     
     
     
@@ -606,3 +828,4 @@ export const cocktails = [
 
 //cointreau is fancy triple sec, sometimes its a different glass, cognac is like brandy but with more rules, 
 //they are organized in a way that make sense to my own brain in a glance
+//How to swizzle - Build in shaker tin, Dry shake, Pour into glass ,Fill half way with crushed ice ,Swizzle, Top with crushed ice
