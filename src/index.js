@@ -18,7 +18,8 @@ searchButton.addEventListener("click", (event) => {
     // Filter cocktails by name or ingredients
     const filterCocktails = cocktails.filter(cocktail => 
         cocktail.name.toLowerCase().includes(query) ||
-        cocktail.ingredients.some(ingredient => ingredient.name.toLowerCase().includes(query))
+        cocktail.ingredients.some(ingredient => ingredient.name.toLowerCase().includes(query)) ||
+        cocktail.categories.some(category => category.toLowerCase().includes(query))
     );
 
     // Re-render Results
@@ -83,29 +84,17 @@ function renderCard(cocktail) {
     card.appendChild(ingredientsList);
 
     return card;
-
-    // return `
-    //   <div class="card">
-    //     <div class="card-header">
-    //          <img src="assets/rocks-glass.jpg" alt="Cocktail Icon" class="cocktail-icon">
-    //       <h2>${cocktail.name}</h2>
-    //     </div>
-    //     <div class="preparations">
-    //       <p>${cocktail.glass} / ${cocktail.method} / ${cocktail.garnish}</p>
-    //     </div>
-    //     <ul class="ingredients">
-    //       ${cocktail.ingredients
-    //         .map((ingredient) => `<li>${ingredient.amount} ${ingredient.name}</li>`)
-    //         .join("")}
-    //     </ul>
-    //   </div>
-    // `;
 };
   
 function renderAllCocktails() {
     mainContainer.innerHTML = ""; // Clear the container
 
-    cocktails.forEach((cocktail) => {
+    //Sort the cocktails
+    const sortedCocktails = cocktails.slice().sort((a, b) => {
+        return a.name.localeCompare(b.name);
+    });
+
+    sortedCocktails.forEach((cocktail) => {
         const card = renderCard(cocktail); // Create a card element
         mainContainer.appendChild(card); // Append it to the container
     });
