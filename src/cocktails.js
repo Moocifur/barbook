@@ -526,7 +526,7 @@ export const cocktails = [
             { "amount": "0.25oz", "name": "Elderflower Liqueur", "type": "Liqueur" },
             { "amount": "0.5oz", "name": "Rosemary Simple Syrup", "type": "Sweetener" }
         ],
-        "categories": ["modern", "aromatic", "spirit-forward", "herbal", "balanced"]
+        "categories": ["modern", "aromatic", "spirit-forward", "herbal", "balanced", "basin 141"]
     },
     {
         "id": 37,
@@ -591,7 +591,7 @@ export const cocktails = [
             { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
             { "amount": "Top", "name": "Soda Water", "type": "Modifier" }
         ],
-        "categories": ["modern", "refreshing", "herbal", "citrus-forward", "light"]
+        "categories": ["modern", "refreshing", "herbal", "citrus-forward", "light", "basin 141"]
     },
     {
         "id": 41,
@@ -608,7 +608,7 @@ export const cocktails = [
             { "amount": "0.75oz", "name": "Luxardo", "type": "Liqueur" },
             { "amount": "0.5oz", "name": "Dry Vermouth", "type": "Fortified Wine" }
         ],
-        "categories": ["modern", "spirit-forward", "aromatic", "balanced", "complex"]
+        "categories": ["modern", "spirit-forward", "aromatic", "balanced", "complex", "the famous"]
     },
     {
         "id": 42,
@@ -624,7 +624,7 @@ export const cocktails = [
             { "amount": "0.5oz", "name": "Agave", "type": "Sweetener" }
 
         ],
-        "categories": ["modern", "citrus-forward", "refreshing"]
+        "categories": ["modern", "citrus-forward", "refreshing", "the famous"]
     },
     {
         "id": 43,
@@ -802,9 +802,9 @@ export const cocktails = [
             { "amount": "2oz", "name": "Brandy", "type": "Spirit" },
             { "amount": "0.75oz", "name": "Hazelnut Liquer", "type": "Liqueur" },
             { "amount": "0.5oz", "name": "Creme de Cacao", "type": "Liqueur" },
-            { "amount": "0.75oz", "name": "Half n Half", "type": "Dairy" },
+            { "amount": "0.75oz", "name": "Half n Half", "type": "Dairy" }
         ],
-        "categories": ["modern", "dessert", "nutty", "creamy", "aromatic"]
+        "categories": ["modern", "dessert", "nutty", "creamy", "aromatic", "the famous"]
     },
     {
         "id": 55,
@@ -820,6 +820,138 @@ export const cocktails = [
         ],
         "categories": ["modern", "spirit-forward", "bitter", "balanced", "aromatic"]
     },
+    {
+        "id": 56,
+        "name": "Mole Mole Mole Mole Mole",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Orange Twist",
+        "ingredients": [
+            { "amount": "4 Dash", "name": "Mole Bitters", "type": "Bitters" },
+            { "amount": "1.5oz", "name": "Mezcal", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Orgeat Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "spicy", "citrus-forward", "balanced", "aromatic", "the famous"]
+    },
+    {
+        "id": 57,
+        "name": "Martinez",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Stir",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "1 Dash", "name": "Angostura Bitters", "type": "Bitters" },
+            { "amount": "1, Dash", "name": "Orange Bitters", "type": "Bitters" },
+            { "amount": "1.5oz", "name": "Old Tom Gin", "type": "Spirit" },
+            { "amount": "1.5oz", "name": "Sweet Vermouth", "type": "Fortified Wine" },
+            { "amount": "0.25oz", "name": "Maraschino Liqueur", "type": "Liqueur" }
+        ],
+        "categories": ["classic", "spirit-forward", "herbal", "balanced", "aromatic"]
+    },
+    {
+        "id": 58,
+        "name": "Monte Carlo",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Stir",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "2oz", "name": "Rye Whiskey", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Benedictine", "type": "Liqueur" },
+            { "amount": "2 Dashes", "name": "Angostura Bitters", "type": "Bitters" }
+        ],
+        "categories": ["classic", "spirit-forward", "herbal", "aromatic", "balanced"]
+    },
+    {
+        "id": 59,
+        "name": "Mos Eisely",
+        "glass": "Rocks (Neat)",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Aperol", "type": "" },
+            { "amount": "0.25oz", "name": "Dry Curacao", "type": "" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Orange Juice", "type": "Citrus" }
+        ],
+        "categories": ["modern", "citrus-forward", "refreshing", "balanced", "dlo"]
+    },
+    {
+        "id": 60,
+        "name": "Mexican Candy",
+        "glass": "Shot",
+        "iconType": "shot",
+        "method": "Shake",
+        "garnish": "Tajin Rim",
+        "ingredients": [
+            { "amount": "1oz", "name": "Tequila or Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Watermelon Pucker", "type": "Liqueur" },
+            { "amount": "0.25oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "1 Dash", "name": "Hot Sauce", "type": "Seasoning" }
+        ],
+        "categories": ["modern", "sweet", "spicy", "fun"]
+    },
+    {
+        "id": 61,
+        "name": "Aunt Florence (Red Aunt)",
+        "glass": "Flute",
+        "iconType": "flute",
+        "method": "Shake",
+        "garnish": "Lemon Twist & Cherry",
+        "ingredients": [
+            { "amount": "0.75oz", "name": "Egg Whites", "type": "Mixer" },
+            { "amount": "2oz", "name": "Rye Whiskey", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Cherry Heering", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["classic-inspired", "spirit-forward", "balanced", "aromatic", "the famous"]
+    },
+    {
+        "id": 62,
+        "name": "Naughty Rabbit",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Orange Twist",
+        "ingredients": [
+            { "amount": "2oz", "name": "Mezcal", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Velvet Falernum", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Orgeat", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "tropical", "citrus-forward", "smoky", "balanced"]
+    },
+    {
+        "id": 63,
+        "name": "The Oso",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Grapefruit Twist",
+        "ingredients": [
+            { "amount": "2oz", "name": "Mezcal", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Orgeat Syrup", "type": "Sweetener" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Grapefruit Juice", "type": "Citrus" }
+        ],
+        "categories": ["modern", "citrus-forward", "refreshing", "balanced", "smoky"]
+    }
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
     
     
     

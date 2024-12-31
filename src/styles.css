@@ -142,6 +142,7 @@ form {
   white-space: nowrap; /* Prevents text from wrapping */
   overflow: hidden;    /* Hides overflowing text */
   text-overflow: ellipsis; /* Adds ellipsis for overflow */
+  max-width: 90%; /* Optional for finer control */
 }
 
 /* Card details */
