@@ -1062,29 +1062,412 @@ export const cocktails = [
             { "amount": "0.25oz", "name": "Simple Syrup", "type": "Sweetener" }
         ],
         "categories": ["classic-inspired", "citrus-forward", "balanced", "refreshing", "aromatic", "basin 141"]
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-    
-    
-    
-    
-    
+    },
+    {
+        "id": 72,
+        "name": "Pisco Smash",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Lime Wheel & Cherry",
+        "ingredients": [
+            { "amount": "Muddle", "name": "Lime & 4 Blackberries", "type": "" },
+            { "amount": "1.5oz", "name": "Pisco", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Simple Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "citrus-forward", "fruity", "refreshing", "balanced", "basin 141"]
+    },
+    {
+        "id": 73,
+        "name": "Russian STD Mule",
+        "glass": "Copper Mug",
+        "iconType": "mug",
+        "method": "Shake",
+        "garnish": "Ginger",
+        "ingredients": [
+            { "amount": "2oz", "name": "Russian Standard Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.75oz", "name": "Ginger Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "spicy", "refreshing", "citrus-forward", "the famous"]
+    },
+    {
+        "id": 74,
+        "name": "Red Headed Slut",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "",
+        "ingredients": [
+            { "amount": "1oz", "name": "Jägermeister", "type": "Liqueur" },
+            { "amount": "1oz", "name": "Peach Schnapps", "type": "Liqueur" },
+            { "amount": "2oz", "name": "Cranberry Juice", "type": "Juice" }
+        ],
+        "categories": ["modern", "fruity", "sweet", "fun"]
+    },
+    {
+        "id": 75,
+        "name": "Rose Cocktail",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Orange Twist",
+        "ingredients": [
+            { "amount": "2oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Aperol", "type": "" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Juice" },
+            { "amount": "0.25oz", "name": "Agave", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "refreshing", "balanced", "citrus-forward"]
+    },
+    {
+        "id": 76,
+        "name": "Moscow Mule",
+        "glass": "Copper Mug",
+        "iconType": "mug",
+        "method": "Build",
+        "garnish": "Lime Wedge",
+        "ingredients": [
+            { "amount": "2oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "Top", "name": "Ginger Beer", "type": "Mixer" }
+        ],
+        "categories": ["classic", "refreshing", "spicy", "citrus-forward", "light"]
+    },
+    {
+        "id": 77,
+        "name": "Ramos Gin Fizz",
+        "glass": "Collins",
+        "iconType": "collins",
+        "method": "Shake (Dry and Wet)",
+        "garnish": "",
+        "ingredients": [
+            { "amount": "0.75", "name": "Egg White", "type": "Mixer" },
+            { "amount": "2 Dashes", "name": "Orange Flower Water", "type": "Flavoring" },
+            { "amount": "2oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "1oz", "name": "Heavy Cream", "type": "Dairy" },
+            { "amount": "Top", "name": "Soda Water", "type": "Mixer" }
+        ],
+        "categories": ["classic", "creamy", "citrus-forward", "balanced", "frothy"]
+    },
+    {
+        "id": 78,
+        "name": "Smash",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Mint Sprig",
+        "ingredients": [
+            { "amount": "Muddled 6 Leaves", "name": "Mint", "type": "Herb" },
+            { "amount": "Muddled 1/2", "name": "Lemon", "type": "Citrus" },
+            { "amount": "2oz", "name": "Base Spirit", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" },
+        ],
+        "categories": ["classic", "herbal", "citrus-forward", "refreshing", "balanced"]
+    },
+    {
+        "id": 79,
+        "name": "Singapore Sling",
+        "glass": "Collins",
+        "iconType": "collins",
+        "method": "Shake",
+        "garnish": "Orange Twist & Cherry",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Cherry Heering", "type": "Liqueur" },
+            { "amount": "0.25oz", "name": "Cointreau", "type": "Liqueur" },
+            { "amount": "0.25oz", "name": "Benedictine", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Pineapple Juice", "type": "Juice" },
+            { "amount": "1 Dash", "name": "Angostura Bitters", "type": "Bitters" },
+            { "amount": "Top", "name": "Soda Water", "type": "Mixer" }
+        ],
+        "categories": ["classic", "tropical", "fruity", "refreshing", "balanced"]
+    },
+    {
+        "id": 80,
+        "name": "Siesta",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Orange Peel",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Tequila", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Campari", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Grapefruit Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "2 Dashes", "name": "Angostura Bitters", "type": "Bitters" }
+        ],
+        "categories": ["modern", "citrus-forward", "balanced", "refreshing", "bitter"]
+    },
+    {
+        "id": 81,
+        "name": "Sword & Pistol",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Stir",
+        "garnish": "Cucumber Slice",
+        "ingredients": [
+            { "amount": "2 Dashes", "name": "Chocolate Chili Bitters", "type": "Bitters" },
+            { "amount": "1.75oz", "name": "Mezcal", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Sweet Vermouth", "type": "Fortified Wine" },
+            { "amount": "0.5oz", "name": "Pimms", "type": "Liqueur" }
+        ],
+        "categories": ["modern", "spicy", "balanced", "aromatic", "smoky", "the famous"]
+    },
+    {
+        "id": 82,
+        "name": "Accomplice",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Strawberry Syrup", "type": "Sweetener" },
+            { "amount": "Top", "name": "Sparkling Wine", "type": "Wine" }
+        ],
+        "categories": ["modern", "fruity", "refreshing", "citrus-forward", "light"]
+    },
+    {
+        "id": 83,
+        "name": "Captain Bon-ere-fart",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Stir",
+        "garnish": "Flamed Orange Twist",
+        "ingredients": [
+            { "amount": "1 Cube", "name": "Brown Sugar", "type": "Sweetener" },
+            { "amount": "1 Cube", "name": "White Sugar", "type": "Sweetener" },
+            { "amount": "2 Dashes", "name": "Jerry Thomas Bitters", "type": "Bitters" },
+            { "amount": "3 Dashes", "name": "Creole Bitters", "type": "Bitters" },
+            { "amount": "2oz", "name": "Sailor Jerry's Rum", "type": "Spirit" }
+        ],
+        "categories": ["modern", "spirit-forward", "aromatic", "balanced", "spiced", "the famous"]
+    },
+    {
+        "id": 84,
+        "name": "Aviation",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Cherry or Lemon Twist",
+        "ingredients": [
+            { "amount": "2oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Maraschino Liqueur", "type": "Liqueur" },
+            { "amount": "0.25oz", "name": "Creme de Violette", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" }
+        ],
+        "categories": ["classic", "floral", "citrus-forward", "balanced", "elegant"]
+    },
+    {
+        "id": 85,
+        "name": "Arsenic",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Orange Twist",
+        "ingredients": [
+            { "amount": "2 Dashes", "name": "Gingerbread Bitters", "type": "Bitters" },
+            { "amount": "2oz", "name": "Jameson", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Velvet Falernum", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Orgeat Syrup", "type": "Sweetener" }
+        ],
+        "categories": ["modern", "spicy", "citrus-forward", "balanced", "aromatic", "the famous"]
+    },
+    {
+        "id": 86,
+        "name": "Cash Stache",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Stir",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "0.75oz", "name": "Tequila", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Mezcal", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Amaro Meletti", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Cocchi Americano", "type": "Fortified Wine" },
+            { "amount": "2 Dashes", "name": "Bergamot Bitters", "type": "Bitters" }
+        ],
+        "categories": ["modern", "spirit-forward", "aromatic", "balanced", "smoky", "the famous"]
+    },
+    {
+        "id": 87,
+        "name": "Strawberry Fields",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "1.75oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.25oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "0.75oz", "name": "Strawberry Purée", "type": "Fruit" },
+            { "amount": "Top", "name": "Sparkling Wine", "type": "Wine" }
+        ],
+        "categories": ["modern", "fruity", "refreshing", "balanced", "elegant"]
+    },
+    {
+        "id": 88,
+        "name": "Triple Crown",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Bourbon", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Orange Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Agave", "type": "Sweetener" } 
+        ],
+        "categories": ["modern", "citrus-forward", "balanced", "spirit-forward", "refreshing", "the famous"]
+    },
+    {
+        "id": 89,
+        "name": "Tiga Special #2",
+        "glass": "Flute",
+        "iconType": "flute",
+        "method": "Shake",
+        "garnish": "Grapefruit Twist",
+        "ingredients": [
+            { "amount": "1oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Pamplemousse (Grapefruit Liqueur)", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Honey", "type": "Sweetener" },
+            { "amount": "Top", "name": "Sparkling Wine", "type": "Wine" }
+        ],
+        "categories": ["modern", "fruity", "refreshing", "balanced", "elegant", "the famous"]
+    },
+    {
+        "id": 90,
+        "name": "Vitulli",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Stir",
+        "garnish": "Orange Twist",
+        "ingredients": [
+            { "amount": "2 Dashes", "name": "Orange Bitters", "type": "Bitters" },
+            { "amount": "1.5oz", "name": "Old Overholt Rye", "type": "Spirit" },
+            { "amount": "1.5oz", "name": "Sweet Vermouth", "type": "Fortified Wine" },
+            { "amount": "0.25oz", "name": "Fernet Branca", "type": "Liqueur" },
+            { "amount": "0.5oz", "name": "Amaro Nonino", "type": "Liqueur" },
+        ],
+        "categories": ["modern", "aromatic", "spirit-forward", "balanced", "herbal", "the famous"]
+    },
+    {
+        "id": 91,
+        "name": "Vieux Carré",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Stir",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "2 Dashes", "name": "Angostura Bitters", "type": "Bitters" },
+            { "amount": "2 Dashes", "name": "Peychaud's Bitters", "type": "Bitters" },
+            { "amount": "1oz", "name": "Rye Whiskey", "type": "Spirit" },
+            { "amount": "1oz", "name": "Cognac", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Sweet Vermouth", "type": "Fortified Wine" },
+            { "amount": "0.25oz", "name": "Benedictine", "type": "Liqueur" }
+            
+        ],
+        "categories": ["classic", "aromatic", "spirit-forward", "balanced", "complex"]
+    },
+    {
+        "id": 92,
+        "name": "Vesper Martini",
+        "glass": "Martini",
+        "iconType": "martini",
+        "method": "Stir",
+        "garnish": "Lemon Twist",
+        "ingredients": [
+            { "amount": "2oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "1oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Lillet Blanc", "type": "Fortified Wine" }
+        ],
+        "categories": ["classic", "elegant", "spirit-forward", "balanced"]
+    },
+    {
+        "id": 93,
+        "name": "Sex on the Beach",
+        "glass": "Highball",
+        "iconType": "collins",
+        "method": "Shake",
+        "garnish": "Orange Slice and Cherry",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Peach Schnapps", "type": "Liqueur" },
+            { "amount": "1oz", "name": "Orange Juice", "type": "Juice" },
+            { "amount": "1oz", "name": "Cranberry Juice", "type": "Juice" }
+        ],
+        "categories": ["classic", "fruity", "refreshing", "balanced", "tropical"]
+    },
+    {
+        "id": 94,
+        "name": "Madras",
+        "glass": "Highball",
+        "iconType": "collins",
+        "method": "Build",
+        "garnish": "Lime Wedge",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "2oz", "name": "Cranberry Juice", "type": "Juice" },
+            { "amount": "1oz", "name": "Orange Juice", "type": "Juice" }
+        ],
+        "categories": ["classic", "refreshing", "fruity", "light"]
+    },
+    {
+        "id": 95,
+        "name": "Sea Breeze",
+        "glass": "Highball",
+        "iconType": "collins",
+        "method": "Build",
+        "garnish": "Lime Wedge",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "3oz", "name": "Cranberry Juice", "type": "Juice" },
+            { "amount": "1oz", "name": "Grapefruit Juice", "type": "Citrus" }
+        ],
+        "categories": ["classic", "refreshing", "citrus-forward", "light"]
+    },
+    {
+        "id": 96,
+        "name": "Bay Breeze",
+        "glass": "Highball",
+        "iconType": "collins",
+        "method": "Build",
+        "garnish": "Lime Wedge",
+        "ingredients": [
+            { "amount": "1.5oz", "name": "Vodka", "type": "Spirit" },
+            { "amount": "3oz", "name": "Cranberry Juice", "type": "Juice" },
+            { "amount": "1oz", "name": "Pineapple Juice", "type": "Juice" }
+        ],
+        "categories": ["classic", "refreshing", "fruity", "tropical"]
+    },
+    {
+        "id": 97,
+        "name": "Weissen Sour",
+        "glass": "Tumbler",
+        "iconType": "tumbler",
+        "method": "Shake",
+        "garnish": "Lemon Wheel",
+        "ingredients": [
+            { "amount": "1 Spoon", "name": "Marmalade", "type": "Sweetener" },
+            { "amount": "2 Dashes", "name": "Orange Bitters", "type": "Bitters" },
+            { "amount": "2oz", "name": "Bourbon", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "0.25oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "2oz", "name": "Hefeweizen Beer", "type": "Beer" }
+        ],
+        "categories": ["modern", "refreshing", "beer-based", "citrus-forward", "balanced", "basin 141"]
+    }   
 
 ]
 
