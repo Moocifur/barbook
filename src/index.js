@@ -7,10 +7,7 @@ import { glassIcons } from "./icons.js";
 
 //SELECTORS
 const mainContainer = document.getElementById('main');
-const userInput = document.getElementById('search-bar');
 const searchButton = document.getElementById('search-button');
-
-//new
 const searchBar = document.getElementById("search-bar");
 const clearButton = document.getElementById("clear-button");
 const separator = document.querySelector(".separator");
@@ -19,7 +16,7 @@ const separator = document.querySelector(".separator");
 //EVENTLISTENER
 searchButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const query = userInput.value.toLowerCase().trim();
+    const query = searchBar.value.toLowerCase().trim();
 
     // Filter cocktails by name or ingredients
     const filterCocktails = cocktails.filter(cocktail => 
@@ -43,7 +40,7 @@ searchButton.addEventListener("click", (event) => {
         noResultsMessage.classList.add("no-results");
         noResultsMessage.textContent = `No results for "${query}".`;
         mainContainer.appendChild(noResultsMessage);
-    }
+        }
 });
 
 // Event listener for input changes
@@ -57,15 +54,23 @@ searchBar.addEventListener("input", () => {
       clearButton.style.display = "none";
       separator.style.display = "none";
     }
-  });
+});
   
-  // Clear the search bar when clicking the clear button
-  clearButton.addEventListener("click", () => {
+// Clear the search bar when clicking the clear button
+clearButton.addEventListener("click", () => {
     searchBar.value = "";
     clearButton.style.display = "none";
     separator.style.display = "none";
     searchBar.focus(); // Optional: Return focus to the search bar
-  });
+});
+
+//make outside clickable
+document.addEventListener("click", (event) => {
+    // Check if the click is outside the search bar and it's currently focused
+    if (!searchBar.contains(event.target) && document.activeElement === searchBar) {
+      searchBar.blur(); // Unfocus the input box
+    }
+});
 
 //FUNCTIONS
 function renderCard(cocktail) {

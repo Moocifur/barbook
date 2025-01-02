@@ -1601,8 +1601,10 @@ export const cocktails = [
         ],
         "categories": ["modern", "spicy", "refreshing", "balanced", "citrus-forward", "basin 141"]
     }
-]
+
 
 //cointreau is fancy triple sec, sometimes its a different glass, cognac is like brandy but with more rules, 
 //they are organized in a way that make sense to my own brain in a glance
 //How to swizzle - Build in shaker tin, Dry shake, Pour into glass ,Fill half way with crushed ice ,Swizzle, Top with crushed ice
+
+]
