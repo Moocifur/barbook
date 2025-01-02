@@ -243,7 +243,7 @@ export const cocktails = [
         "id": 18,
         "name": "Mint Julep",
         "glass": "Julep Cup",
-        "iconType": "julep",
+        "iconType": "coppermug",
         "method": "Build",
         "garnish": "Mint Sprig",
         "ingredients": [
@@ -452,7 +452,7 @@ export const cocktails = [
         "id": 32,
         "name": "Basil Paloma",
         "glass": "Tumbler",
-        "iconType": "tumbler",
+        "iconType": "wine",
         "method": "Shake",
         "garnish": "Salt Rim and Basil",
         "ingredients": [
@@ -910,7 +910,7 @@ export const cocktails = [
             { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" },
             { "amount": "0.75oz", "name": "Simple Syrup", "type": "Sweetener" }
         ],
-        "categories": ["classic-inspired", "spirit-forward", "balanced", "aromatic", "the famous"]
+        "categories": ["modern", "spirit-forward", "balanced", "aromatic", "the famous"]
     },
     {
         "id": 62,
@@ -1037,7 +1037,7 @@ export const cocktails = [
         "id": 70,
         "name": "Pimm's Cup",
         "glass": "Highball",
-        "iconType": "highball",
+        "iconType": "collins",
         "method": "Build",
         "garnish": "Mint, Cucumber, Seasonal Fruits",
         "ingredients": [
@@ -1061,7 +1061,7 @@ export const cocktails = [
             { "amount": "0.75oz", "name": "Grapefruit Juice", "type": "Citrus" },
             { "amount": "0.25oz", "name": "Simple Syrup", "type": "Sweetener" }
         ],
-        "categories": ["classic-inspired", "citrus-forward", "balanced", "refreshing", "aromatic", "basin 141"]
+        "categories": ["modern", "citrus-forward", "balanced", "refreshing", "aromatic", "basin 141"]
     },
     {
         "id": 72,
@@ -1083,7 +1083,7 @@ export const cocktails = [
         "id": 73,
         "name": "Russian STD Mule",
         "glass": "Copper Mug",
-        "iconType": "mug",
+        "iconType": "coppermug",
         "method": "Shake",
         "garnish": "Ginger",
         "ingredients": [
@@ -1126,7 +1126,7 @@ export const cocktails = [
         "id": 76,
         "name": "Moscow Mule",
         "glass": "Copper Mug",
-        "iconType": "mug",
+        "iconType": "coppermug",
         "method": "Build",
         "garnish": "Lime Wedge",
         "ingredients": [
@@ -1313,7 +1313,7 @@ export const cocktails = [
             { "amount": "0.75oz", "name": "Strawberry Purée", "type": "Fruit" },
             { "amount": "Top", "name": "Sparkling Wine", "type": "Wine" }
         ],
-        "categories": ["modern", "fruity", "refreshing", "balanced", "elegant"]
+        "categories": ["modern", "fruity", "refreshing", "balanced", "elegant", "basin 141"]
     },
     {
         "id": 88,
@@ -1455,7 +1455,7 @@ export const cocktails = [
         "id": 97,
         "name": "Weissen Sour",
         "glass": "Tumbler",
-        "iconType": "tumbler",
+        "iconType": "wine",
         "method": "Shake",
         "garnish": "Lemon Wheel",
         "ingredients": [
@@ -1467,8 +1467,140 @@ export const cocktails = [
             { "amount": "2oz", "name": "Hefeweizen Beer", "type": "Beer" }
         ],
         "categories": ["modern", "refreshing", "beer-based", "citrus-forward", "balanced", "basin 141"]
-    }   
-
+    },
+    {
+        "id": 98,
+        "name": "Coughlin’s Law",
+        "glass": "Coupe",
+        "iconType": "coupe",
+        "method": "Shake",
+        "garnish": "Lavender Sprig",
+        "ingredients": [
+            { "amount": "1", "name": "Egg White", "type": "Mixer" },
+            { "amount": "2 Dashes", "name": "Lavender Bitters", "type": "Bitters" },
+            { "amount": "2oz", "name": "Gin", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Vanilla Infused Simple Syrup", "type": "Sweetener" },
+            { "amount": "0.75oz", "name": "Lemon Juice", "type": "Citrus" }
+        ],
+        "categories": ["modern", "aromatic", "creamy", "balanced", "elegant", "basin 141"]
+    },
+    {
+        "id": 99,
+        "name": "Honolulu Rose",
+        "glass": "Martini",
+        "iconType": "martini",
+        "method": "Shake",
+        "garnish": "Mint Sprig",
+        "ingredients": [
+            { "amount": "1.75oz", "name": "Hibiscus Infused Vodka", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Orgeat Syrup", "type": "Sweetener" },
+            { "amount": "0.5oz", "name": "Lemon Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Pineapple Juice", "type": "Juice" }
+        ],
+        "categories": ["modern", "tropical", "fruity", "refreshing", "balanced", "basin 141"]
+    },
+    {
+        "id": 100,
+        "name": "Tippler’s Punch",
+        "glass": "Tulip",
+        "iconType": "tulip",
+        "method": "Shake",
+        "garnish": "Cherry and Orange Slice",
+        "ingredients": [
+            { "amount": "3 Dashes", "name": "Angostura Bitters", "type": "Bitters" },
+            { "amount": "0.75oz", "name": "White Rum", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Sailor Jerry’s Rum", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Cynar", "type": "Liqueur" },
+            { "amount": "1oz", "name": "Plum Purée", "type": "Fruit" },
+            { "amount": "0.5oz", "name": "Lime Juice", "type": "Citrus" },
+        ],
+        "categories": ["tropical", "complex", "fruity", "refreshing", "modern", "basin 141"]
+    },
+    {
+        "id": 101,
+        "name": "The Sinclair",
+        "glass": "Rocks",
+        "iconType": "rocks",
+        "method": "Shake",
+        "garnish": "Grapefruit Twist",
+        "ingredients": [
+            { "amount": "1.75oz", "name": "Mezcal", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "0.25oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "White Grapefruit Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Pineapple Juice", "type": "Juice" }
+        ],
+        "categories": ["modern", "smoky", "fruity", "balanced", "citrus-forward", "basin 141"]
+    },
+    {
+        "id": 102,
+        "name": "The Basin Rita",
+        "glass": "Mason Jar",
+        "iconType": "mason",
+        "method": "Shake",
+        "garnish": "Salted Rim and Lime Wheel",
+        "ingredients": [
+            { "amount": "Muddle", "name": "Orange, Lime, and Lemon Slices", "type": "Citrus" },
+            { "amount": "1.75oz", "name": "Cazadores Reposado", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Triple Sec", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Agave", "type": "Sweetener" },
+            { "amount": "1oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Lemon Juice", "type": "Citrus" }
+        ],
+        "categories": ["classic", "citrus-forward", "refreshing", "tart", "balanced", "basin 141"]
+    },
+    {
+        "id": 103,
+        "name": "Spicy Basin Rita",
+        "glass": "Mason Jar",
+        "iconType": "mason",
+        "method": "Shake",
+        "garnish": "Salted Rim, Lime Wheel, Jalapeño Slice",
+        "ingredients": [
+            { "amount": "Muddle", "name": " Handful Jalapeño, Orange, Lime, Lemon Slice", "type": "Vegetable" },
+            { "amount": "1.75oz", "name": "Cazadores Reposado", "type": "Spirit" },
+            { "amount": "0.5oz", "name": "Triple Sec", "type": "Liqueur" },
+            { "amount": "0.25oz", "name": "Ancho Reyes Chili Liqueur", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Agave", "type": "Sweetener" },
+            { "amount": "1oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Lemon Juice", "type": "Citrus" }
+        ],
+        "categories": ["spicy", "citrus-forward", "bold", "modern", "refreshing", "basin 141"]
+    },
+    {
+        "id": 104,
+        "name": "Smoke & Fire",
+        "glass": "Mason Jar",
+        "iconType": "mason",
+        "method": "Shake",
+        "garnish": "Chili Salt Rim & Jalapeño Spear",
+        "ingredients": [
+            { "amount": "Muddle", "name": " Handful Jalapeño, Orange, Lime Slice", "type": "Vegetable" },
+            { "amount": "1.75oz", "name": "Mezcal", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Ancho Reyes Chili Liqueur", "type": "Liqueur" },
+            { "amount": "0.75oz", "name": "Agave ", "type": "Sweetener" },
+            { "amount": "1oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "1oz", "name": "Lemon Juice", "type": "Citrus" },
+        ],
+        "categories": ["spicy", "smoky", "bold", "modern", "complex", "basin 141"]
+    },
+    {
+        "id": 105,
+        "name": "Midnight Mule",
+        "glass": "Mason Jar",
+        "iconType": "mason",
+        "method": "Shake",
+        "garnish": "Lime Wheel",
+        "ingredients": [
+            { "amount": "2 Dashes", "name": "Angostura Bitters", "type": "Bitters" },
+            { "amount": "1.5oz", "name": "Midnight Moonshine", "type": "Spirit" },
+            { "amount": "0.75oz", "name": "Domaine de Canton Ginger Liqueur", "type": "Liqueur" },
+            { "amount": "1oz", "name": "Lime Juice", "type": "Citrus" },
+            { "amount": "0.5oz", "name": "Simple Syrup", "type": "Sweetener" },
+            { "amount": "Top", "name": "Club Soda", "type": "Mixer" }
+        ],
+        "categories": ["modern", "spicy", "refreshing", "balanced", "citrus-forward", "basin 141"]
+    }
 ]
 
 //cointreau is fancy triple sec, sometimes its a different glass, cognac is like brandy but with more rules, 
