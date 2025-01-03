@@ -50,20 +50,34 @@ h1 {
   gap: 10px;
 }
 
-/*input bar*/
-/* #search-bar {
-  box-sizing: border-box;
-  padding: 12px 20px;
-  width: 100%;
-  background: none;
-  border: 2px solid var(--secondary-color);
-  border-radius: 1000px;
-  font: inherit;
-  color: var(--text-color);
-  caret-color: var(--accent-color);
-} */
+/* Sticky Wrapper */
 
-/* new  */
+.sticky-wrapper {
+  position: sticky;
+  top: 0; /* Stick to the top when scrolled */
+  z-index: 5;
+  /* background: var(--background); */
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  border: 2px solid var(--secondary-color); /* Matches the | separator color */
+  border-radius: 1000px;
+  padding: 0 10px;
+  gap: 10px; /* Space between elements */
+  box-sizing: border-box;
+  background-color: var(--background);
+  /* background: none; */
+}
+
 #search-bar {
   flex-grow: 1; /* Takes up available space */
   border: none;
@@ -72,6 +86,7 @@ h1 {
   font: inherit;
   color: var(--text-color);
   background: none;
+  /* background-color: var(--background); */
 }
 
 #search-bar::-webkit-search-cancel-button {
@@ -83,31 +98,7 @@ h1 {
 }
 
 /* new  */
-.search-form {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 700px;
-  border: 2px solid var(--secondary-color); /* Matches the | separator color */
-  border-radius: 1000px;
-  padding: 0 10px;
-  gap: 10px; /* Space between elements */
-  box-sizing: border-box;
-  background-color: none;
-}
 
-/* #search-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  background-color: var(--accent-color);
-  height: 100%;
-  padding: 0 15px;
-  border: none;
-  border-radius: 1000px;
-  cursor: pointer;
-} */
 
 #search-button {
   background-color: var(--accent-color); /* Green search button */
@@ -120,18 +111,6 @@ h1 {
   height: 36px; /* Ensure size consistency */
   width: 36px; /* Ensure size consistency */
 }
-
-/* #clear-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 70px;
-  height: 100%;
-  padding: 0 15px;
-  border: none;
-  border-radius: 1000px;
-  cursor: pointer;
-} */
 
 #clear-button {
   background: none;
@@ -160,6 +139,17 @@ h1 {
     height: 20px;
     width: 20px;
 }
+
+.action-buttons {
+  display: flex; /* Align multiple buttons side-by-side if needed */
+  justify-content: flex-start; /* Align to the left */
+  width: 100%;
+  max-width: 700px; /* Matches search bar width */
+  gap: 10px; /* Space between buttons */
+  background: transparent;
+  padding-left: 20px;
+}
+
 
 
 /* Add flexbox alignment for uniformity */
@@ -198,6 +188,7 @@ h1 {
 /* Card header (title and optional image) */
 .card-header {
   display: flex; 
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
@@ -221,6 +212,12 @@ h1 {
   overflow: hidden;    /* Hides overflowing text */
   text-overflow: ellipsis; /* Adds ellipsis for overflow */
   max-width: 90%; /* Optional for finer control */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Card details */
@@ -265,14 +262,7 @@ h1 {
 /*----------------------------------------------------------------*/
 
 
-/* Sticky Wrapper */
-.sticky-wrapper {
-  position: sticky;
-  top: 0; /* Stick to the top when scrolled */
-  z-index: 5;
-  background: var(--background);
-  padding: 10px 0;
-}
+
 
 /* Add transition for scrolled effect */
 .scrolled {
@@ -300,5 +290,99 @@ h1 {
 }
 
 /*--------------------------------------*/
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.favorite-button:hover {
+  transform: scale(1.1);
+}
+
+.favorite-button:focus {
+  outline: none;
+}
+
+/* Default icon styles */
+.favorite-icon {
+  fill: #5f6368; /* Default icon color */
+  transition: fill 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* When the button is clicked (favorited state) */
+.favorite-button.favorited .favorite-icon {
+  fill: #00ffc4; /* Highlighted/favorited color */
+}
+
+
+
+/* #favorites-button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  width: 36px; 
+  margin-left: 10px;
+} */
+
+#favorites-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  margin-left: 10px;
+}
+
+#favorites-button {
+  background-color: var(--secondary-color); /* Gray background */
+  color: var(--primary-color); /* Text/icon fallback color */
+  /* border: 2px solid var(--accent-color); */
+  border-radius: 50%; /* Make it circular */
+  font-size: 1rem; /* Adjust font size if necessary */
+  cursor: pointer;
+  height: 48px; /* Ensure it's a perfect circle */
+  width: 48px; /* Ensure it's a perfect circle */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  display: flex; /* Flex for centering */
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  margin-left: 10px; /* Space to the left */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+}
+
+/* #favorites-button:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 10px rgba(0, 255, 196, 0.3); 
+} */
+
+#favorites-button svg {
+  fill: var(--accent-color); /* Green outline color for the SVG */
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease; /* Smooth color transition */
+}
+
+/* #favorites-button:hover svg {
+  fill: var(--text-color);
+} */
+
+
+
+ 
+
+
 
 
